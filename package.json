@@ -1,0 +1,30 @@
+{
+    "name": "@codedflute/homebridge-bj-led-ble",
+    "version": "1.5.1",
+    "displayName": "Homebridge BJ_LED Plugin",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+        "@abandonware/noble": "^1.9.2-15"
+    },
+    "keywords": [
+        "homebridge-plugin"
+    ],
+    "engines": {
+        "node": ">=12.13.0",
+        "homebridge": ">=1.3.0"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/CodedFlute/bj_led_homebridge.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/CodedFlute/bj_led_homebridge/issues"
+    },
+    "homepage": "https://github.com/CodedFlute/bj_led_homebridge#readme"
+}
