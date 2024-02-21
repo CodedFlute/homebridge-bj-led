@@ -1,4 +1,12 @@
 const noble = require("@abandonware/noble");
+noble.on("stateChange", (state) => {
+  if (state === "poweredOn") {
+    noble.startScanningAsync();
+  } else {
+    if (this.peripheral) this.peripheral.disconnect();
+    this.connected = false;
+  }
+});
 
 function hslToRgb(h, s, l) {
   var r, g, b;
@@ -138,6 +146,7 @@ module.exports = class Device {
       const bhex = ("0" + b.toString(16)).slice(-2);
       const buffer = Buffer.from(`69960502${rhex}${ghex}${bhex}ff`, "hex");
       log(buffer);
+      console.log(buffer);
       this.write.write(buffer, true, (err) => {
         if (err) console.log("Error:", err);
         this.debounceDisconnect();
