@@ -146,7 +146,7 @@ module.exports = class Device {
       const bhex = ("0" + b.toString(16)).slice(-2);
       const buffer = Buffer.from(`69960502${rhex}${ghex}${bhex}ff`, "hex");
       log(buffer);
-      console.log(buffer);
+      console.log("Packet sent:", buffer.toString("hex")); // Log the packet sent
       this.write.write(buffer, true, (err) => {
         if (err) console.log("Error:", err);
         this.debounceDisconnect();
