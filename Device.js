@@ -1,4 +1,4 @@
-const noble = require("noble-uwp");
+const noble = require("@abandonware/noble");
 
 function hslToRgb(h, s, l) {
   var r, g, b;

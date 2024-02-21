@@ -19,12 +19,12 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/CodedFlute/bj_led_homebridge.git"
+        "url": "git+https://github.com/CodedFlute/homebridge-bj-led.git"
     },
     "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/CodedFlute/bj_led_homebridge/issues"
+        "url": "https://github.com/CodedFlute/homebridge-bj-led/issues"
     },
-    "homepage": "https://github.com/CodedFlute/bj_led_homebridge#readme"
+    "homepage": "https://github.com/CodedFlute/homebridge-bj-led#readme"
 }
